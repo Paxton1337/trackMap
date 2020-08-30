@@ -1,0 +1,6 @@
+<div class="mb-2 add-assets__header"><strong>Warning</strong></div>
+<div class="mb-3">Are you sure want to delete <b>{{data.truck.name}}</b>?</div>
+<div class="d-flex justify-content-between">
+    <button type="button" class="btn btn-warning mr-1" matDialogClose>Cancel</button>
+    <button type="button" class="btn btn-danger" (click)="removeTruck()" matDialogClose>Delete</button>
+</div>

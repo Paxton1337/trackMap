@@ -1,0 +1,32 @@
+<form [formGroup]="TruckForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label class="form-control-label">Name truck</label>
+        <div class="input-group input-group-merge">
+            <input type="email" formControlName="name" class="form-control" placeholder="truck">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-control-label">Latitude</label>
+        <div class="input-group input-group-merge">
+            <input type="email" formControlName="lat" class="form-control" placeholder="latitude">
+        </div>
+    </div>
+    <div class="form-group mb-4">
+        <div class="d-flex align-items-center justify-content-between">
+            <div>
+                <label class="form-control-label">Longitude</label>
+            </div>
+        </div>
+        <div class="input-group input-group-merge">
+            <input type="text" formControlName="lng" class="form-control" placeholder="longitude">
+        </div>
+    </div>
+    <div class="mt-5 mb-1 d-flex justify-content-between">
+        <button type="button" class="btn submit-btn btn-sm btn-outline-danger btn-icon" matDialogClose>
+            <span class="btn-inner--text">Close</span>
+        </button>
+        <button type="submit" class="btn submit-btn btn-sm btn-outline-primary btn-icon" [disabled]="TruckForm.invalid" matDialogClose>
+            <span class="btn-inner--text">Add Truck</span>
+        </button>
+    </div>
+</form>
