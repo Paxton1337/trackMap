@@ -22,7 +22,6 @@ export class AddTruckModalComponent implements OnInit {
 
 
   onSubmit(): void {
-    console.log(this.TruckForm.value);
     this.truckControl.addTruck(this.TruckForm.value);
   }
 }

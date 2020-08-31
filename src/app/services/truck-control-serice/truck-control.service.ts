@@ -18,7 +18,6 @@ export class TruckControlService {
 
   addTruck(truck$: Truck): void {
     this.trucks.push(truck$);
-    console.log(this.trucks);
   }
 
   removeTruck(truck$: Truck): void {

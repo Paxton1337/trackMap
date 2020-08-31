@@ -47,10 +47,7 @@ export class LayoutComponent implements OnInit {
     const sliceEnd = this.filterName.length;
     this.trucks = this.trucks.filter(truck => {
       const filter = truck.name.slice(0, sliceEnd);
-      if (this.filterName === filter) {
-        return true;
-      }
-      return false;
+      return this.filterName === filter ? true : false ;
     });
   }
 }
